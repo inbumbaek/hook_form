@@ -4,11 +4,13 @@ const Form = (props) => {
 
     let bool = true
 
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [confirmPassword, setConfirmPassword] = useState('')
+    const [info, setInfo] = useState({
+        firstName:'',
+        lastName:'',
+        email:'',
+        password:'',
+        confirmPassword:''
+    })
 
     const handleFirstName = (e) => {
         setFirstName(e.target.value)
