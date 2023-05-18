@@ -12,24 +12,8 @@ const Form = (props) => {
         confirmPassword:''
     })
 
-    const handleFirstName = (e) => {
-        setFirstName(e.target.value)
-    }
-
-    const handleLastName = (e) => {
-        setLastName(e.target.value)
-    }
-
-    const handleEmail = (e) => {
-        setEmail(e.target.value)
-    }
-
-    const handlePassword = (e) => {
-        setPassword(e.target.value)
-    }
-
-    const handleConfirmPassword = (e) => {
-        setConfirmPassword(e.target.value)
+    const changeHandler = (e) => {
+        setInfo({...info, [e.target.name]:e.target.value})
     }
 
     return (
