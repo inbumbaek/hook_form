@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 const Form = (props) => {
 
+    let bool = true
+
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
